@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <ImageView
+         android:layout_height="45dp"
+         android:layout_width="45dp"
+         android:src="@drawable/ic_modmenu"
+         android:scaleType="fitCenter"
+         android:layout_margin="5dp"
+         android:focusable="false"
+         android:id="@+id/modmenu_icon" />
+
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         style="?attr/materialCardViewFilledStyle"
+         android:id="@+id/modmenu_card_background">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="10dp"
+             android:orientation="vertical"
+             android:id="@+id/modmenu_background">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="300dp"
+                 android:gravity="center_horizontal|center_vertical"
+                 android:padding="5dp"
+                 android:textSize="18sp"
+                 android:focusable="false"
+                 android:id="@+id/injector_name"
+                 android:text="@string/app_name"
+                 android:textStyle="bold" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="horizontal"
+                 android:id="@+id/option_1_background">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:padding="8dp"
+                     android:textSize="16sp"
+                     android:focusable="false"
+                     android:layout_weight="1"
+                     android:id="@+id/option_1_text"
+                     android:text="@string/modmenu_option_head" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:gravity="left|center_vertical"
+                     android:textSize="14sp"
+                     android:focusable="false"
+                     android:id="@+id/option_1_switch"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textSize="18sp"
+                 style="?attr/materialButtonOutlinedStyle"
+                 android:id="@+id/button_close"
+                 android:text="@string/close"
+                 android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

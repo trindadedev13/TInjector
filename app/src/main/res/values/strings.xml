@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TInjector</string>
+    <string name="modmenu_option_head">HEAD - CABEÇA</string>
+    <string name="home_android11_permission">Android 11  Storage Permission</string>
+    <string name="home_show_menu">Show Mod Menu</string>
+    <string name="help_title">Instructional video</string>
+    <string name="help_description">*if you are facing errors while selecting Android folder*</string>
+    <string name="close">Close</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="center_horizontal|center_vertical"
+         android:padding="8dp"
+         android:orientation="vertical"
+         android:id="@+id/linear_background">
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+            style="?attr/materialCardViewFilledStyle"
+             android:id="@+id/buttons_card">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="12dp"
+                 android:orientation="vertical">
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="8dp"
+                     android:textSize="14sp"
+                     android:id="@+id/button_permission"
+                     android:text="@string/home_android11_permission"
+                     android:textStyle="bold" />
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="8dp"
+                     android:textSize="14sp"
+                     android:id="@+id/button_show_menu"
+                     android:text="@string/home_show_menu"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>
